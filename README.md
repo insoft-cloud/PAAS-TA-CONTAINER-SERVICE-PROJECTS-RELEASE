@@ -1,12 +1,9 @@
 ## PAAS-TA-CONTAINER-SERVICE-PROJECTS-RELEASE   
 
 ### Notices   
-- Use PAAS-TA-CONTAINER-SERVICE-PROJECTS-RELEASE >= v.2.0.1    
+- Use PAAS-TA-CONTAINER-SERVICE-PROJECTS-RELEASE >= v.2.0.2    
   - PaaS-TA >= v.5.0.2    
   - service-deployment >= v5.0.2    
-- Use PAAS-TA-CONTAINER-SERVICE-PROJECTS-RELEASE =< v.2.0.0     
-  - PaaS-TA =< v.5.0.1    
-  - service-deployment =< v5.0.1    
 
 ### PaaS-TA Container Service Projects Configuration   
 - container-service-api :: N machine(s)   
@@ -21,7 +18,7 @@
 ### Create PaaS-TA Container Service Projects   
 - Download the latest PaaS-TA Container Service Projects Release   
   ```   
-  $ git clone https://github.com/PaaS-TA/PAAS-TA-CONTAINER-SERVICE-PROJECTS-RELEASE.git   
+  $ git clone -b v2.0.2 https://github.com/insoft-cloud/PAAS-TA-CONTAINER-SERVICE-PROJECTS-RELEASE.git
   $ cd PAAS-TA-CONTAINER-SERVICE-PROJECTS-RELEASE   
   ```   
 - Download & Copy "source files" into the src directory      
@@ -73,9 +70,9 @@
   ```   
 - Create PaaS-TA Container Service Projects   
   ```   
-  ## <VERSION> :: release version (e.g. 2.0.1)      
+  ## <VERSION> :: release version (e.g. 2.0.2)      
   ## <RELEASE_TARBALL_PATH> :: release file path (e.g. /home/ubuntu/workspace/paasta-container-service-projects-release-<VERSION>.tgz)      
   $ bosh -e <bosh_name> create-release --name=paasta-container-service-projects-release --version=<VERSION> --tarball=<RELEASE_TARBALL_PATH> --force    
   ```   
 ### Deployment   
-- https://github.com/PaaS-TA/service-deployment   
+- git clone -b v2.0.2 https://github.com/insoft-cloud/PAAS-TA-CONTAINER-SERVICE-DEPLOYMENT.git 
