@@ -26,6 +26,18 @@
   ## download source files   
   $ wget -O src.zip http://45.248.73.44/index.php/s/GjwtbxDdcMkEGq8/download   
 
+  
+  * v2.0.2를 배포하기 위해 아래 수정된 파일들이 있어 JANDI 드라이브를 참고하여 해당하는 파일을 교체한다.
+  위치는 JANDI 드라이브 
+  -> [대민정보통합운영체계구축2차사업_200501~210225] > [paasta-5.0] > [release] 아래 caas-src-2.0.2.zip 파일을 참고한다.
+  
+  >> 수정된 파일 목록
+  - paas-ta-caas-broker.jar
+  - paas-ta-caas-api.jar
+  - paas-ta-caas-common-api.jar
+  - paas-ta-caas-dashboard.war
+  
+
   ## unzip download source files   
   $ unzip src.zip   
   $ mv paas-ta-container-service-release-src src   
