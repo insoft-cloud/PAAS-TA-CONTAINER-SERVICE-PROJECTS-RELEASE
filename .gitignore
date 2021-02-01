@@ -1,0 +1,7 @@
+# Ignore Build Directories
+.dev_builds/**
+dev_releases/**
+release/**
+
+# SRC File
+src/**

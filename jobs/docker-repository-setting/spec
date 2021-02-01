@@ -1,0 +1,23 @@
+---
+name: docker-repository-setting
+templates:
+  bin/post-deploy.erb: bin/post-deploy
+packages:
+  - docker-repository-setting
+
+consumes:
+  - name: caas-haproxy-link
+    type: caas-haproxy
+  - name: caas-mariadb-link
+    type: caas-mariadb
+  - name: caas-api-link
+    type: caas-api
+  - name: caas-common-api-link
+    type: caas-common-api
+  - name: private-image-repository-link
+    type: private-image-repository
+
+
+properties:
+  caas_master_public_url:
+    description: "master ip"
