@@ -1,0 +1,41 @@
+addons:
+name: dns-aliases
+  jobs:
+  - name: dns-aliases
+    properties:
+      aliases:
+      - domain: uaa.service.cf.internal
+        targets:
+        - query: '*'
+          instance_group: uaa
+          deployment: paasta
+          network: ((paasta_network_name))
+          domain: bosh
+      - domain: uaa.((paasta_domain))
+        targets:
+        - query: '*'
+          instance_group: haproxy
+          deployment: paasta
+          network: ((paasta_network_name))
+          domain: bosh
+      - domain: api.((paasta_domain))
+        targets:
+        - query: '*'
+          instance_group: haproxy
+          deployment: paasta
+          network: ((paasta_network_name))
+          domain: bosh
+      - domain: doppler.((paasta_domain))
+        targets:
+        - query: '*'
+          instance_group: haproxy
+          deployment: ((paasta_deployment_name))
+          network: ((paasta_network_name))
+          domain: bosh
+      - domain: login.((paasta_domain))
+        targets:
+        - query: '*'
+          instance_group: haproxy
+          deployment: paasta
+          network: ((paasta_network_name))
+          domain: bosh
