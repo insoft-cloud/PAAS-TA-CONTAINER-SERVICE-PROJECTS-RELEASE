@@ -86,5 +86,7 @@
   ## <RELEASE_TARBALL_PATH> :: release file path (e.g. /home/ubuntu/workspace/paasta-container-service-projects-release-<VERSION>.tgz)      
   $ bosh -e <bosh_name> create-release --name=paasta-container-service-projects-release --version=<VERSION> --tarball=<RELEASE_TARBALL_PATH> --force    
   ```   
+  
+  
 ### Deployment   
-- git clone -b v2.0.2 https://github.com/insoft-cloud/PAAS-TA-CONTAINER-SERVICE-DEPLOYMENT.git 
+- ./deployment/container-service 디렉토리 이하를 참고한다. 
